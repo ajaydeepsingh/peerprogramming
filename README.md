@@ -1,6 +1,6 @@
-# chatflutter
+# peerprogrammingchat
 
-Peer Programming Assignment for Mobile Apps and Services
+Peer Programming Assignment for Mobile Applications and Services
 
 ## Getting Started
 
