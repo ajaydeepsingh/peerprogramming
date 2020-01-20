@@ -97,7 +97,7 @@ class MainScreenState extends State<MainScreen> {
     );
     var iOSPlatformChannelSpecifics = new IOSNotificationDetails();
     var platformChannelSpecifics =
-    new NotificationDetails(androidPlatformChannelSpecifics, iOSPlatformChannelSpecifics);
+        new NotificationDetails(androidPlatformChannelSpecifics, iOSPlatformChannelSpecifics);
     await flutterLocalNotificationsPlugin.show(
         0, message['title'].toString(), message['body'].toString(), platformChannelSpecifics,
         payload: json.encode(message));
@@ -274,11 +274,11 @@ class MainScreenState extends State<MainScreen> {
             Positioned(
               child: isLoading
                   ? Container(
-                child: Center(
-                  child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(themeColor)),
-                ),
-                color: Colors.white.withOpacity(0.8),
-              )
+                      child: Center(
+                        child: CircularProgressIndicator(valueColor: AlwaysStoppedAnimation<Color>(themeColor)),
+                      ),
+                      color: Colors.white.withOpacity(0.8),
+                    )
                   : Container(),
             )
           ],
@@ -299,25 +299,25 @@ class MainScreenState extends State<MainScreen> {
               Material(
                 child: document['photoUrl'] != null
                     ? CachedNetworkImage(
-                  placeholder: (context, url) => Container(
-                    child: CircularProgressIndicator(
-                      strokeWidth: 1.0,
-                      valueColor: AlwaysStoppedAnimation<Color>(themeColor),
-                    ),
-                    width: 50.0,
-                    height: 50.0,
-                    padding: EdgeInsets.all(15.0),
-                  ),
-                  imageUrl: document['photoUrl'],
-                  width: 50.0,
-                  height: 50.0,
-                  fit: BoxFit.cover,
-                )
+                        placeholder: (context, url) => Container(
+                          child: CircularProgressIndicator(
+                            strokeWidth: 1.0,
+                            valueColor: AlwaysStoppedAnimation<Color>(themeColor),
+                          ),
+                          width: 50.0,
+                          height: 50.0,
+                          padding: EdgeInsets.all(15.0),
+                        ),
+                        imageUrl: document['photoUrl'],
+                        width: 50.0,
+                        height: 50.0,
+                        fit: BoxFit.cover,
+                      )
                     : Icon(
-                  Icons.account_circle,
-                  size: 50.0,
-                  color: greyColor,
-                ),
+                        Icons.account_circle,
+                        size: 50.0,
+                        color: greyColor,
+                      ),
                 borderRadius: BorderRadius.all(Radius.circular(25.0)),
                 clipBehavior: Clip.hardEdge,
               ),
@@ -353,9 +353,9 @@ class MainScreenState extends State<MainScreen> {
                 context,
                 MaterialPageRoute(
                     builder: (context) => Chat(
-                      peerId: document.documentID,
-                      peerAvatar: document['photoUrl'],
-                    )));
+                          peerId: document.documentID,
+                          peerAvatar: document['photoUrl'],
+                        )));
           },
           color: greyColor2,
           padding: EdgeInsets.fromLTRB(25.0, 10.0, 25.0, 10.0),
