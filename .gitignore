@@ -28,6 +28,13 @@
 .pub/
 build/
 
+# Node Things
+node_modules
+build
+npm-debug.log
+.env
+.DS_Store
+
 # Android related
 **/android/**/gradle-wrapper.jar
 **/android/.gradle
