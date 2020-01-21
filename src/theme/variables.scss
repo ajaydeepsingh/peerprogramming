@@ -41,6 +41,15 @@ $colors: (
   dark:       #222
 );
 
+@font-face {
+	font-family: 'Alegreya Sans Regular';
+	src: url("../assets/fonts/AlegreyaSans-Regular.otf");
+}
+$font-family-base: 'Alegreya Sans Regular';
+$font-family-ios-base: 'Alegreya Sans Regular';
+$font-family-md-base: 'Alegreya Sans Regular';
+$font-family-wp-base: 'Alegreya Sans Regular';
+
 
 // App iOS Variables
 // --------------------------------------------------
