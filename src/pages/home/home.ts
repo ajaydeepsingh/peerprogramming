@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController, AlertController, App } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
-import { LoginPage } from '../login/login';
+// import { LoginPage } from '../login/login';
 import { AngularFirestore } from 'angularfire2/firestore';
 
 @Component({

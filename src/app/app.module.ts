@@ -10,6 +10,9 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+// import { LoginPage } from '../pages/login/login';
+import { RegisterPage } from '../pages/register/register';
+// import { ResetPasswordPage } from '../pages/reset-password/reset-password';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyCNIAEGlWg0YuEVP7omETN-5EBMBRUdSKc",
@@ -26,16 +29,25 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    RegisterPage,
+    ResetPasswordPage
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    RegisterPage,
+    ResetPasswordPage
   ],
   providers: [
     StatusBar,
